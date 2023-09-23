@@ -29,6 +29,8 @@
             <li>Delivery date filter for an application, that cannot select previous date past today's date.</li>
         
         <form action="submit.php" method= "POST">
+            <!-- 25pts total -->
+            <!-- 3pts -->
             <label for="delivery-date">Delivery Date:</label>
             <input type="date" id="delivery-date" name="delivery-date" min="2023-09-16" max="2023-09-30" required>
             <input type="submit" value="Submit">
@@ -47,6 +49,7 @@
                         <li>Timor-Leste</li>
                         <li>Vietname</li>
                     </ul>
+                    <!-- 2pts, the order has change. point deduction -->
                     <form action="submit.php" method= "POST">
                     <label for="nation">Select a Southeast Asian Nation:</label>
                     <select id="nation" name="nation">
@@ -75,6 +78,7 @@
                     <li>Carrots</li>
                     <li>Onion</li>
                 </ul>
+                <!-- 1pt, wrong input type. Should be checkbox -->
                 <form action="submit.php" method= "POST">
                 <label for="ingredients">Select Ingredients:</label><br>
                 <select id="ingredients" name="ingredients[]" multiple>
@@ -91,6 +95,7 @@
 
             <li>An input field to select whether a user is an administrator or not? (Boolean)</li>    
             <form action="submit.php" method= "POST">
+            <!-- 3pts -->
             <label for="is-admin">Administrator:</label>
             <input type="checkbox" id="is-admin" name="is-admin">
             <br><br>
@@ -98,6 +103,7 @@
             </form>
 
             <li>An input field to upload one or more audio related files(like mp3, wav, ogg, m4a)</li>
+            <!-- 3pts -->
             <form action="submit.php" method= "POST">
             <label for="audio-files">Upload Audio Files (MP3, WAV, OGG, M4A):</label>
         <input type="file" id="audio-files" name="audio-files[]" accept=".mp3, .wav, .ogg, .m4a" multiple>
@@ -131,6 +137,7 @@
   
 </head>
 <body>
+    <!-- 13pts, check the table semantics tag you use. the thead was change to thread and </tbody> has no corresponding opening tag -->
     <table style="background-color: darkgrey; color:black; border: 1px solid black;border-collapse: collapse;">
       <thread>
         <tr style="border: 1px solid black;">
